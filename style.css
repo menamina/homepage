@@ -1,3 +1,5 @@
+/* FLEX + GRID */
+
 .main-tain,
 .contact {
     display: flex;
@@ -11,3 +13,21 @@
     flex-direction: column;
 }
 
+/* IMGS */
+.selfie,
+.socials,
+.mini-social,{
+    height: 100%;
+}
+
+.selfie {
+    width: 300px;
+}
+
+.socials {
+    width: 35px;
+}
+
+.mini-social {
+    width: 25px;
+}
