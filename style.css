@@ -1,7 +1,9 @@
-/* FLEX + GRID */
+/* flex + grid */
 
 .main-tain,
-.contact {
+.contact,
+.phone,
+.email {
     display: flex;
 }
 
@@ -24,10 +26,28 @@
     width: 300px;
 }
 
+.selfie2 {
+    width: 420px;
+}
+
 .socials {
     width: 35px;
 }
 
 .mini-social {
     width: 25px;
+}
+
+/* evrything else */
+
+.contact {
+    background-color: rgb(237, 178, 97);
+    justify-content: center;
+    padding: 30px;
+    color: rgb(53, 52, 52)
+}
+
+.phone,
+.email {
+    gap: 20px;
 }
