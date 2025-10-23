@@ -3,16 +3,52 @@
 .main-tain,
 .contact,
 .phone,
-.email {
+.email,
+.mywork {
     display: flex;
 }
 
-.contact-left {
-    display: block;
+.main-tain,
+.mywork {
+    flex-direction: column;
 }
 
-.main-tain {
-    flex-direction: column;
+.gridForProj {
+    display: grid;
+}
+
+.gridForProj {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.two {
+    grid-column: 2;
+}
+
+.three {
+    grid-column: 3;
+}
+
+.four {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.five {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.six {
+    grid-row: 2;
+    grid-column: 3;
+}
+
+
+.contact-left {
+    display: block;
 }
 
 /* IMGS */
@@ -39,6 +75,8 @@
 }
 
 /* evrything else */
+
+
 
 .contact {
     background-color: rgb(237, 178, 97);
