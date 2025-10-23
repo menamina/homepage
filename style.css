@@ -1,0 +1,13 @@
+.main-tain,
+.contact {
+    display: flex;
+}
+
+.contact-left {
+    display: block;
+}
+
+.main-tain {
+    flex-direction: column;
+}
+
