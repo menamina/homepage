@@ -1,6 +1,7 @@
 /* flex + grid */
 * {
     box-sizing: border-box;
+    color: rgb(53, 52, 52);
 }
 
 .main-tain,
@@ -8,12 +9,15 @@
 .phone,
 .email,
 .mywork,
-.nameLink {
+.nameLink,
+.aboutMe,
+.headerContainer {
     display: flex;
 }
 
 .main-tain,
-.mywork {
+.mywork,
+.aboutMe {
     flex-direction: column;
 }
 
@@ -79,12 +83,28 @@
 }
 
 /* top */
-
 .main-tain {
-    gap: 20px;
+    gap: 30px;
+}
+
+.header {
+    margin: 3rem;
+    background-color: rgb(202, 175, 227);
+}
+
+.headerContainer {
+    background-color: rgb(202, 175, 227);
+}
+
+
+.links {
+    align-self: flex-end;
 }
 
 /* middle */
+.mywork {
+    box-shadow: 2px 2px 8px 2px #bfbfbf;
+}
 
 .projects {
     margin: 3rem;
@@ -103,8 +123,7 @@
     text-align: center;
     align-content: center;
     font-size: 2rem;
-    color: rgb(53, 52, 52);
-    
+
 }
 
 .projIMG.one {
@@ -136,7 +155,6 @@
 .contact {
     background-color: rgb(237, 178, 97);
     padding: 30px;
-    color: rgb(53, 52, 52);
     width: 100%;
 }
 
