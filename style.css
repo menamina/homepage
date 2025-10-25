@@ -11,7 +11,8 @@
 .mywork,
 .nameLink,
 .aboutMe,
-.headerContainer {
+.header,
+.photo-box {
     display: flex;
 }
 
@@ -66,10 +67,7 @@
     height: 100%;
 }
 
-.selfie {
-    width: 300px;
-}
-
+.selfie,
 .selfie2 {
     width: 420px;
 }
@@ -87,15 +85,35 @@
     gap: 30px;
 }
 
-.header {
-    margin: 3rem;
-    background-color: rgb(202, 175, 227);
-}
-
 .headerContainer {
-    background-color: rgb(202, 175, 227);
+    position: relative;
+    /* children of this div can be absolutely positioned or z indexed */
+    background: linear-gradient(165deg, rgb(237, 178, 97) 50%, #ffffff 50%);
+    padding: 3rem 2rem;
+
 }
 
+.header {
+    align-items: center;
+}
+
+.photo-box {
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMe {
+    background-color: white;
+    box-shadow: 2px 2px 8px 2px #bfbfbf;
+    padding: 30px;
+}
+
+h1 {
+    position: absolute;
+    z-index: 1;
+    transform: translateY(12rem);
+    background-color: #ffe0e0;
+}
 
 .links {
     align-self: flex-end;
@@ -111,6 +129,8 @@
 }
 
 .underProjImg {
+    margin-left: 2rem;
+    margin-right: 2rem;
     margin-bottom: 2rem;
 }
 
