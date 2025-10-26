@@ -12,6 +12,7 @@
 .nameLink,
 .aboutMe,
 .header,
+.photo-box,
 .contact > * {
     display: flex;
 }
@@ -61,11 +62,11 @@
 .socials,
 .mini-social {
     height: 100%;
+    object-fit: contain;
 }
 
-.selfie,
-.selfie2 {
-    max-width: 420px;
+.selfie{
+    width: 420px;
 }
 
 .socials {
@@ -94,6 +95,8 @@
 }
 
 .photo-box {
+    justify-content: center;
+    align-items: center;
     position: relative;
 }
 
@@ -106,7 +109,7 @@
 h1 {
     position: absolute;
     z-index: 1;
-    transform: translateY(-2rem);
+    transform: translateY(12rem);
     background-color: #ffe0e0;
 }
 
@@ -132,9 +135,15 @@ h1 {
     margin-right: 2rem;
     margin-bottom: 2rem;
 }
+.projNameLink {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
 
 .nameLink {
     justify-content: space-between;
+    align-items: center;
 }
 
 .projIMG {
@@ -209,11 +218,43 @@ h1 {
         align-items: center;
     }
 
-    h1 {
-        transform: translateY(-3.5rem);
+    .selfie {
+        width: 325px;
     }
+
+    h1 {
+        transform: translateY(9rem);
+    }
+
 }
 
-/* @media (max-width: 1000px){
+@media (max-width: 950px) {
+    .gridForProj {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    .three {
+        grid-row: 2;
+        grid-column: 1;
+    }
 
-} */
+    .four {
+        grid-row: 2;
+    }
+
+    .five,
+    .six {
+        grid-row: 3;
+    }
+
+    .five {
+        grid-column: 1;
+    }
+
+    .four,
+    .six {
+        grid-column: 2;
+    }
+
+}
