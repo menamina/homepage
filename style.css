@@ -12,13 +12,14 @@
 .nameLink,
 .aboutMe,
 .header,
-.photo-box {
+.contact > * {
     display: flex;
 }
 
 .main-tain,
 .mywork,
-.aboutMe {
+.aboutMe,
+.contact-left {
     flex-direction: column;
 }
 
@@ -55,11 +56,6 @@
     grid-column: 3;
 }
 
-
-.contact-left {
-    display: block;
-}
-
 /* IMGS */
 .selfie,
 .socials,
@@ -69,7 +65,7 @@
 
 .selfie,
 .selfie2 {
-    width: 420px;
+    max-width: 420px;
 }
 
 .socials {
@@ -98,8 +94,7 @@
 }
 
 .photo-box {
-    justify-content: center;
-    align-items: center;
+    position: relative;
 }
 
 .aboutMe {
@@ -111,12 +106,16 @@
 h1 {
     position: absolute;
     z-index: 1;
-    transform: translateY(12rem);
+    transform: translateY(-2rem);
     background-color: #ffe0e0;
 }
 
 .links {
     align-self: flex-end;
+}
+
+.links-contact {
+    justify-self: center;
 }
 
 /* middle */
@@ -176,6 +175,8 @@ h1 {
     background-color: rgb(237, 178, 97);
     padding: 30px;
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -184,15 +185,32 @@ h1 {
     gap: 20px;
 }
 
-.contact-left,
 .contact-right {
     width: 50%;
+    justify-content: center;
+    align-items: center;
 }
 
 /* media queries */
 @media (max-width: 500px){
-    .contact {
+    .contact,
+    .gridForProj,
+    .contact,
+    .header,
+    .contact-left {
         flex-direction: column;
+    }
+    .gridForProj {
+        display: flex;
+    }
+
+    .contact{
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        transform: translateY(-3.5rem);
     }
 }
 
